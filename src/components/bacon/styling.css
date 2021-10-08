@@ -1,0 +1,8 @@
+.bacon {
+  background-image: url(/src/assets/images/tomato.jpg);
+  margin: 8px 0px;
+  height: 20px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
