@@ -7,7 +7,7 @@ const pricesOfItems = {
   meat: 1.3
 }
 
-let burger = {
+let initialState = {
   lettuce: 0,
   bacon: 0,
   cheese: 0,
@@ -15,23 +15,27 @@ let burger = {
   price: 3.0
 }
 
-const reducers = (state = burger, action) => {
+const reducers = (state = initialState, action) => {
   let itemQuantity = 0
 
   switch (action.type) {
     case ITEM_ADDED:
-      itemQuantity = burger[action.payload.item]
-      itemQuantity = itemQuantity + 1
-      burger.price = burger.price + pricesOfItems[action.payload.item]
+      itemQuantity = state[action.payload.item] + 1
+      state.price = state.price + pricesOfItems[action.payload.item]
 
-      return (burger = { ...state, [action.payload.item]: itemQuantity })
+      return {
+        ...state,
+        [action.payload.item]: itemQuantity
+      }
 
     case ITEM_REMOVED:
-      itemQuantity = burger[action.payload.item]
-      itemQuantity = itemQuantity - 1
-      burger.price = burger.price - pricesOfItems[action.payload.item]
+      itemQuantity = state[action.payload.item] - 1
+      state.price = state.price - pricesOfItems[action.payload.item]
 
-      return (burger = { ...state, [action.payload.item]: itemQuantity })
+      return {
+        ...state,
+        [action.payload.item]: itemQuantity
+      }
 
     default:
       return state

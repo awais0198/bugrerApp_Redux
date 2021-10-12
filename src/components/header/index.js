@@ -1,4 +1,4 @@
-import './styling.css'
+import './styles.css'
 
 export const Header = () => (
   <header className={'header'}>

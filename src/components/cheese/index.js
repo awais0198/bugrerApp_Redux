@@ -1,3 +1,3 @@
-import './styling.css'
+import './styles.css'
 
 export const Cheese = () => <div className={'cheese'}></div>
