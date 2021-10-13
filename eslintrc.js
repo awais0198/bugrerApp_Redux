@@ -31,7 +31,6 @@ module.exports = {
         'endOfLine': 'lf',
       },
     ],
-    quotes: [0, "double"],
     "jsx-quotes": [2, 'prefer-single'],
     "react/react-in-jsx-scope": 0
   },

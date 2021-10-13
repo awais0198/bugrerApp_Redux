@@ -1,7 +1,7 @@
-import './styling.css'
+import { IngrBtn } from './styles'
 
 export const Button = ({ text, onClick, disabled = false }) => (
-  <button className={'ingr-btn'} onClick={() => onClick()} disabled={disabled}>
+  <IngrBtn className={'ingr-btn'} onClick={() => onClick()} disabled={disabled}>
     {text}
-  </button>
+  </IngrBtn>
 )

@@ -1,5 +1,5 @@
 import { Button } from '..'
-import './styling.css'
+import { IngrBtns } from './styles'
 
 export const Functions = ({ text, handleAddItem, handleRemoveItem, ingredientQuantity }) => {
   return (
@@ -7,14 +7,14 @@ export const Functions = ({ text, handleAddItem, handleRemoveItem, ingredientQua
       <p>
         <b>{text} </b>
       </p>
-      <div className={'ingr-btns'}>
-        <Button text={'Add'} onClick={() => handleAddItem()} />
+      <IngrBtns>
+        <Button text={'Add'} onClick={handleAddItem} />
         <Button
           text={'Remove'}
-          onClick={() => handleRemoveItem()}
+          onClick={handleRemoveItem}
           disabled={ingredientQuantity > 0 ? false : true}
         />
-      </div>
+      </IngrBtns>
     </>
   )
 }
