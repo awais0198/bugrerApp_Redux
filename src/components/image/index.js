@@ -7,8 +7,3 @@ export const Image = styled.img`
   background-repeat: no-repeat;
   text-align: center;
 `
-export const Div = styled.div`
-  height: auto;
-  width: 100%;
-  text-align: center;
-`

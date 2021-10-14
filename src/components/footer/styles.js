@@ -39,3 +39,10 @@ export const IngrDiv = styled.div`
   text-align: center;
   justify-content: space-between;
 `
+
+export const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+`

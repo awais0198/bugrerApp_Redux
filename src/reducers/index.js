@@ -1,27 +1,29 @@
 import { ITEM_ADDED, ITEM_REMOVED } from '../actions'
 
-const pricesOfItems = {
-  lettuce: 0.5,
-  bacon: 0.7,
-  cheese: 0.4,
-  meat: 1.3
-}
+import { initialState } from '../initialState'
 
-let initialState = {
-  lettuce: 0,
-  bacon: 0,
-  cheese: 0,
-  meat: 0,
-  price: 3.0
-}
+// const pricesOfItems = {
+//   lettuce: 0.5,
+//   bacon: 0.7,
+//   cheese: 0.4,
+//   meat: 1.3
+// }
 
-const reducers = (state = initialState, action) => {
+// let initialState = {
+//   lettuce: 0,
+//   bacon: 0,
+//   cheese: 0,
+//   meat: 0,
+//   price: 3.0
+// }
+
+const reducers = (state = initialState.state, action) => {
   let itemQuantity = 0
 
   switch (action.type) {
     case ITEM_ADDED:
       itemQuantity = state[action.payload.item] + 1
-      state.price = state.price + pricesOfItems[action.payload.item]
+      state.price = state.price + initialState.pricesOfItems[action.payload.item]
 
       return {
         ...state,
@@ -30,7 +32,7 @@ const reducers = (state = initialState, action) => {
 
     case ITEM_REMOVED:
       itemQuantity = state[action.payload.item] - 1
-      state.price = state.price - pricesOfItems[action.payload.item]
+      state.price = state.price - initialState.pricesOfItems[action.payload.item]
 
       return {
         ...state,

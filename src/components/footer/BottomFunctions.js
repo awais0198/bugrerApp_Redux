@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Functions } from '..'
 import { ITEM_ADDED, ITEM_REMOVED } from '../../actions'
 import store from '../../store'
-import { BottomDiv, IngrDiv } from './styles'
+import { BottomDiv, IngrDiv, Div } from './styles'
 
 const BURGER_ITEMS = ['lettuce', 'bacon', 'cheese', 'meat']
 
@@ -14,11 +14,15 @@ export const BottomFunctions = () => {
 
   return (
     <BottomDiv>
-      <p>
-        {' '}
-        Current Price: <b> ${store.getState().price.toFixed(2)}</b>
-      </p>
-
+      <Div>
+        <p>
+          {' '}
+          Current Price: <b>$ </b>
+        </p>
+        <p>
+          <b>{store.getState().price.toFixed(2)}</b>
+        </p>
+      </Div>
       <IngrDiv>
         {BURGER_ITEMS.map(ingredient => (
           <Functions

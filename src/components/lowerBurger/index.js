@@ -1,4 +1,5 @@
-import { Div, Image } from './styles'
+import { Image } from '../image'
+import { Div } from '../div'
 
 import IMAGE_PATH from '../../assets/images/bottom.jpg'
 
