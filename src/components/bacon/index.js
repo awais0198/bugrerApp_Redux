@@ -1,9 +1,9 @@
 import { Image, Div } from './styles'
 
-import baconImage from '../../assets/images/bacon.jpg'
+import IMAGE_PATH from '../../assets/images/bacon.jpg'
 
 export const Bacon = () => (
   <Div>
-    <Image alt={'image'} src={`${baconImage}`}></Image>
+    <Image alt={'image'} src={`${IMAGE_PATH}`}></Image>
   </Div>
 )

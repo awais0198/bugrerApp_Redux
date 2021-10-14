@@ -1,9 +1,9 @@
 import { Image, Div } from './styles'
 
-import lettuce from '../../assets/images/lettuse.jpg'
+import IMAGE_PATH from '../../assets/images/lettuse.jpg'
 
 export const Lettuce = () => (
   <Div>
-    <Image alt={'image'} src={`${lettuce}`}></Image>
+    <Image alt={'image'} src={`${IMAGE_PATH}`}></Image>
   </Div>
 )
