@@ -1,4 +1,4 @@
-import { TopHeader } from './styles'
+import { TopHeader } from 'containers/header/styles'
 
 export const Header = () => (
   <TopHeader>

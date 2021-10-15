@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 
-import { Lettuce, Bacon, Cheese, Meat } from '..'
-import { Paragraph } from './styles'
+import { Lettuce, Bacon, Cheese, Meat } from 'components/'
+import { Paragraph } from 'containers/burgerItems/styles'
 
 export const BurgerItems = () => {
   let burger = []

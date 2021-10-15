@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux'
 
-import { Burger, Header } from './components'
-import store from './store'
+import { Burger, Header } from 'containers'
+import store from 'store'
 
 const App = () => (
   <Provider store={store}>

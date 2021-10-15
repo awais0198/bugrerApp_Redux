@@ -1,7 +1,7 @@
-import { Image } from '../image'
-import { Div } from '../div'
+import { Image } from 'components/image'
+import { Div } from 'components/div'
 
-import IMAGE_PATH from '../../assets/images/meat.jpg'
+import IMAGE_PATH from 'assets/images/meat.jpg'
 
 export const Meat = () => (
   <Div>

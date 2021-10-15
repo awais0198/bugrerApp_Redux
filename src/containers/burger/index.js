@@ -1,5 +1,6 @@
-import { BottomFunctions, BurgerItems, LowerBurger, UpperBurger } from '..'
-import { BurgerComponent } from './styles'
+import { LowerBurger, UpperBurger } from 'components/'
+import { BurgerItems, BottomFunctions } from 'containers/'
+import { BurgerComponent } from 'containers/burger/styles'
 
 export const Burger = () => {
   return (
