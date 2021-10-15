@@ -1,5 +1,5 @@
-import { Button } from '..'
-import { IngrBtns } from './styles'
+import { Button } from 'components'
+import { IngrBtns } from 'containers/footer/styles'
 
 export const Functions = ({ text, handleAddItem, handleRemoveItem, ingredientQuantity }) => {
   return (

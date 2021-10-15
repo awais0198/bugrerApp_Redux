@@ -1,2 +1,2 @@
-export const ITEM_ADDED = 'ITEM_ADDED'
-export const ITEM_REMOVED = 'ITEM_REMOVED'
+export const ADD_ITEM = 'ADD_ITEM'
+export const REMOVE_ITEM = 'REMOVE_ITEM'
