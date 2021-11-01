@@ -9,19 +9,19 @@ const reducers = (state = initialState.state, action) => {
     case ADD_ITEM:
       itemQuantity = state[action.payload.item] + 1
       state.price = state.price + initialState.pricesOfItems[action.payload.item]
+      state[action.payload.item] = itemQuantity
 
       return {
-        ...state,
-        [action.payload.item]: itemQuantity
+        ...state
       }
 
     case REMOVE_ITEM:
       itemQuantity = state[action.payload.item] - 1
       state.price = state.price - initialState.pricesOfItems[action.payload.item]
+      state[action.payload.item] = itemQuantity
 
       return {
-        ...state,
-        [action.payload.item]: itemQuantity
+        ...state
       }
 
     default:

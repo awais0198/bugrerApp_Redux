@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 
-import { Functions } from 'containers/footer'
 import { ADD_ITEM, REMOVE_ITEM } from 'actions'
+import { Functions } from 'containers/footer'
 import store from 'store'
 import { BottomDiv, IngrDiv, Div } from 'containers/footer/styles'
 
