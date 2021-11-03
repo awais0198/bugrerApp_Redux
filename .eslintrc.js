@@ -3,7 +3,7 @@ module.exports = {
       browser: true,
       es2021: true,
     },
-    extends: ["eslint:recommended", "plugin:react/recommended", 'plugin:prettier/recommended'],
+    extends: ["eslint:recommended", "plugin:react/recommended", 'plugin:prettier/recommended', "plugin:jest/style", "plugin:jest/recommended"],
     parserOptions: {
       ecmaFeatures: {
         jsx: true,
@@ -11,7 +11,7 @@ module.exports = {
       ecmaVersion: 12,
       sourceType: "module",
     },
-    plugins: ["react"],
+    plugins: ["react", "jest"],
     rules: {
       'prettier/prettier': [
         'error',
@@ -33,6 +33,11 @@ module.exports = {
           'endOfLine': 'lf',
         },
       ],
+      "jest/no-disabled-tests": "warn",
+      "jest/no-focused-tests": "error",
+      "jest/no-identical-title": "error",
+      "jest/prefer-to-have-length": "warn",
+      "jest/valid-expect": "error",
       'no-debugger': 'warn',
       quotes: [0, "double"],
       "jsx-quotes": [2, 'prefer-single'],
